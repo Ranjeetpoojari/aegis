@@ -1,0 +1,485 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+:root{
+    --primary-fonts:'Roboto', sans-serif;
+    --secondary-fonts:'IBM Plex Sans', sans-serif;
+    --red-color:#AB3D41;
+}
+
+/* ***************** Index start ************* */
+/* h1,h2,h3,h5,h4,h6{font-family:var(--primary-fonts); color: #AB3D41;font-family:'Poppins';} */
+/* ********** navbar start************* */
+.navbar-expand-lg {position: fixed; z-index: 999; width: 100%; background: #fff;}
+.navbar-collapse .nav-item .nav-link{
+    font-family: 'Poppins';
+    font-weight: 500;
+}
+/* .navbar-fixed-top.scrolled {
+    background-color: #fff !important;
+  } */
+
+/* ********** navbar end************* */
+
+p{font-family:var();font-weight: 400;}
+body{background:#f3f3f3;   overflow-x: hidden; /* Hide horizontal scrollbar */}
+nav .navbar-brand img{height:35px}
+h1 span{color:#AB3D41;font-family: 'Poppins'; font-weight: 600;}
+h3 span{color:#AB3D41;font-family: 'Poppins'; font-weight: 600;}
+h5 span{color:#AB3D41;font-family: 'Poppins'; font-weight: 600;}
+p span{color:#AB3D41;font-family: 'Poppins'; font-weight: 600; font-size: 20px; display: inline-block; }
+.banner .banner-details{overflow: hidden;
+}
+.banner-img .main-con{overflow: hidden; margin-top: 50px;}
+.banner-img .main-con img{}
+.banner .banner-details h1{margin:170px 100px 50px 100px; font-size: 90px;}
+.banner .banner-details a{color:#fff; background: #AB3D41; text-decoration: none; padding:10px 20px;font-size: 20px; border-radius: 10px; margin-left: 100px;}
+.banner .banner-details .trust-by ul{ margin:50px 50px 0px 80px;}
+.banner .banner-details .trust-by ul li{list-style: none; display:inline-block; margin-left: -20px;}
+.banner .banner-details .trust-by ul img{ height: 90px; width: 90px; border-radius: 50%; border: 5px solid #fff;}
+.banner .banner-details .trust-by h3{margin:30px 0px 0px 100px; }
+.banner-img .main-con .AI{text-decoration: none; padding: 5px 13px; border-radius: 3px; position: absolute; top: 15%;left:62%;color:#4D9A00;background-color: #BFFF8D ;}
+.banner-img .main-con .Data-Science{text-decoration: none; padding: 5px 13px; border-radius: 3px; position: absolute;  top: 40%;left:25%;color: #9A0000;background-color: #FF8D8D ;}
+.banner-img .main-con .Cyber-Security{text-decoration: none;padding: 5px 13px; border-radius: 3px; position: absolute;  top: 44%;left:65%;color: #84009A;background-color: #EDB8FF;}
+.banner-img .main-con .Business-Analytics{text-decoration: none;padding: 5px 13px; border-radius: 3px; position: absolute;  top: 77%; left: 26%;background-color:
+    #FFFA8D ;color: 
+    #9A6F00;}
+    .banner-img .main-con .pyton-div{position: absolute; height: 200px; width: 200px; top:12%;left:22%;}
+    .banner-img .main-con .pyton-div .python-holder{position: relative; width: 100%; height: 100%;}
+    .banner-img .main-con .pyton-div .python-holder img:first-child{position: absolute;top:0%; left:0%; transition: all 1s ease-in-out;animation-name: rotate; animation-duration: 15s; animation-iteration-count: infinite; animation-delay: 0s;}
+
+    .banner-img .main-con .pyton-div .python-holder img:last-child{position: absolute; top:11%; left: 15%;}
+
+    .banner-img .main-con .linux-div{position: absolute; height: 200px; width: 200px; top:58%;left:11%;}
+    .banner-img .main-con .linux-div .linux-holder{position: relative; width: 100%; height: 100%;}
+    .banner-img .main-con .linux-div .linux-holder img:first-child{position: absolute;top:0%; left:0%;transition: all 1s ease-in-out;animation-name: rotate; animation-duration: 15s; animation-iteration-count: infinite; animation-delay: 0s;}
+    .banner-img .main-con .linux-div .linux-holder img:last-child{position: absolute; top:9%; left: 13%;}
+
+    .banner-img .main-con .hadoop-div{position: absolute; height: 200px; width: 200px; bottom:-9%;left:49%;}
+    .banner-img .main-con .hadoop-div .hadoop-holder{position: relative; width: 100%; height: 100%;}
+    .banner-img .main-con .hadoop-div .hadoop-holder img:first-child{position: absolute;top:0%; left:0%; transition: all 1s ease-in-out;animation-name: rotate; animation-duration: 15s; animation-iteration-count: infinite; animation-delay: 0s;}
+    .banner-img .main-con .hadoop-div .hadoop-holder img:last-child{position: absolute; top:11%; left: 10%;}
+
+    .banner-img .main-con .tablesu-div{position: absolute; height: 200px; width: 200px; top:15%;left:69%;}
+    .banner-img .main-con .tablesu-div .tablesu-holder{position: relative; width: 100%; height: 100%;}
+    .banner-img .main-con .tablesu-div .tablesu-holder img:first-child{position: absolute;top:0%; left:0%;transition: all 1s ease-in-out;animation-name: rotate; animation-duration: 15s; animation-iteration-count: infinite; animation-delay: 0s;}
+    .banner-img .main-con .tablesu-div .tablesu-holder img:last-child{position: absolute; top:20%; left: 24%;}
+    @keyframes rotate {
+        0%{
+            transform: rotateZ(0deg);
+        }
+        100%{
+            transform: rotateZ(360deg);
+        }
+    }
+/* *********** banner start ************** */
+
+
+/* ****************form start***************** */
+.login-form form{background:#fff; padding: 20px 0px;}
+.login-form form input{background:#F5F5F5; margin:5px 10px; height: 50px; border-radius: 10px; border:none;outline: #b33337;width: 90%;padding: 0px 22px;}
+.login-form form input[type="submit"]{ display:block;padding: 10px 40px;color:#fff; background: #AB3D41;width:90%; margin:10px auto;}
+
+.owl-carousel .item{ height: 420px; display: flex; justify-content: center;} 
+/* ***************** post graduate start*********************** */
+.Post-Graduate-Programs .course{background: #fff; width: 300px; height: 390px; color: #010101; border-radius: 10px; position: relative;margin: 10px;}
+.Post-Graduate-Programs h2{font-family:'Poppins';font-weight: 600; color:#AB3D41}
+.Post-Graduate-Programs h2 span{ color:#120d0d;}
+.Post-Graduate-Programs .course .card-img{width:100%; height: 200px;}
+.Post-Graduate-Programs h2 p{ font-family:'Poppins';font-weight: 600;}
+.Post-Graduate-Programs .course .card-img img{ width:100%; height:100%; border-radius:20px;object-fit: cover;}
+.Post-Graduate-Programs .course .card-img .grade{display:inline-block; font-weight:800; font-size: 20px; position: absolute; top:-5px; right:-7px;background: #ff9ea1;color: #b33337;padding: 5px 10px; border-radius:50%; border:7px solid #fff;}
+.Post-Graduate-Programs .course .course-title{text-align: center; font-size: 12.5px; position: absolute; left:26px; top:165px; background:#FFF3F3 ; padding: 5px 19px;font-weight: 600; color:#AB3D41;width: 270px;border-radius: 40px;font-family: 'Poppins';}
+.Post-Graduate-Programs .course .course-body{background: #fff;  font-family:'Poppins';position: absolute;top:225px; width: 280px;}
+.Post-Graduate-Programs .course .course-duration,.Post-Graduate-Programs .course .course-body .sub-course{display: inline-block; padding: 0px 17px; list-style: none;font-family: 'Poppins';color:#3a3a3a; font-weight: 400;}
+.Post-Graduate-Programs .course .course-duration{border-right: 1px solid black ;}
+.Post-Graduate-Programs .course .course-duration span,.Post-Graduate-Programs .course .course-body .sub-course span{font-family: 'Poppins';color:#908e8e; font-weight: 400;}
+.Post-Graduate-Programs .course .course-body ul{margin: 0px;padding-left:15px; font-family: 'Poppins'; font-size: 12px;color:#6a6a6a; font-weight: 600;padding:0px 0px 0px 25px}
+.Post-Graduate-Programs .course .course-body ul li{list-style: none; line-height:25px;}
+.Post-Graduate-Programs .course .course-body ul li span{color: #01ff6b !important;}
+.Post-Graduate-Programs .course .course-body .enroll-now{display: block;width: 250px;margin:5px 31px; padding: 10px 80px; text-decoration: none;font-weight: 600; color:#fff; background: #AB3D41;border-radius: 50px; }
+/* ***************** post graduate end*********************** */
+/* **************** About us start ********************************** */
+.aboutus .about-details{position: relative;}
+.aboutus .about-details .circle1{position: absolute; top:-10%; left: -10%;background:#ffd7db;z-index: -5; height:150px; width: 150px;border-radius: 50%;}
+.aboutus .about-details .circle2{position: absolute;top:30%;right: 0%; background:rgb(219 233 249);z-index: -5;height:100px; width: 100px;border-radius: 50%;}
+.aboutus .about-details .circle3{position: absolute; bottom: -10%; left:50% ;background: rgb(210, 252, 210);z-index: -5;height:150px; width: 150px; border-radius: 50%;}
+
+
+
+
+/* **************** About us end  ********************************** */
+
+/* **************** national-talent-hunt start *************************************** */
+.national-talent-hunt{background: #232323; width:100%; height: auto;}
+.national-talent-hunt .national-img img{height: 100%; width: 100%; object-fit: contain; margin: 10px;}
+.national-talent-hunt h1{text-align: center; text-transform: uppercase; color:#fff;}
+.national-talent-hunt h2 span{color:#ff9ea1;}
+.national-talent-hunt .scholarship{background:#494949; margin:5px 0px 0px 35px; border-radius: 10px; padding: 10px;}
+.national-talent-hunt p{color:#fff; margin:5px 0px 0px 25px; font-size: 18px;}
+.national-talent-hunt .scholarship ul{padding: 0px; margin: 0px;}
+.national-talent-hunt .scholarship ul li{display:inline-block; list-style: none; padding: 0px; margin: 0px;}
+.national-talent-hunt .scholarship .scholarship-img{padding: 5px 5px; background: #AB3D41; border-radius: 3px; margin: 10px; float: left;}
+.national-talent-hunt .scholarship .scholarship-title { border-radius:3px; margin: 10px; color:#fff; font-weight: 600; width:70%;}
+.national-talent-hunt .scholarship p{color:#c5c5c5; margin: 0px; padding: 0px; line-height: 20px; font-size: 15px;}
+.national-talent-hunt .aegis-winner{background: #494949;  margin:10px 0px 50px 0px; border-radius: 10px;}
+.national-talent-hunt .aegis-winner .aegis-winner-img img{margin: auto;}
+.national-talent-hunt .aegis-winner .aegis-winner-details p{font-size: 18px;}
+.national-talent-hunt .aegis-winner .aegis-winner-details .mid-line{width:95%; color:#fff; border: 1px solid #fff;margin: 30px auto;}
+.national-talent-hunt .aegis-winner .in-india{color:#FFA800; width:110px; word-wrap: normal; padding: 10px 23px; background:#494949; backdrop-filter: blur(35px); margin:-52px auto;}
+
+
+/* **************** national-talent-hunt end *************************************** */
+/* **************** Campus start ************************************ */
+.Campus .india-map{position: relative;}
+.Campus .campus-name div{padding: 5px 10px; background: #fab8bb; display: inline-block; font-size: 13px; border-radius: 50px; font-weight: bold;}
+.Campus .campus-name .mumbai{position: absolute;bottom: 35%; left: 22%;}
+.Campus .campus-name .Bangalore{position: absolute;bottom: 23%;
+    left: 28%;}
+.Campus .campus-name .Pune{position: absolute; bottom: 30%; left: 12%;}
+.Campus .campus-name .mumbai-sub{position: absolute; bottom: 36%;
+    left: 19.5%; padding: 5px; border: 5px solid #ffdbdb;}
+.Campus .campus-name .Bangalore-sub{position: absolute; bottom: 20%;
+    left: 33%;padding: 5px;border: 5px solid #ffdbdb;}
+.Campus .campus-name .Pune-sub{position: absolute;bottom: 31%;left: 20%; padding: 5px;border: 5px solid #ffdbdb;}
+.Campus .campus-cards .location-campous{background: #fff; padding: 20px; margin-bottom: 50px; border-radius: 10px; width: 200px; display: flex;flex-direction: row; align-items: center;}
+.Campus .campus-cards .campous-name{margin: 0px 10px; font-weight: 600;}
+
+.Campus .campus-cards .location-campous .campous-img img{width: 50px;}
+/* **************** Campus end ************************************ */
+/* ***************** subcribe start*********************** */
+.subcribe .subcribe-img img{height: 250px;}
+.subcribe form input[type="email"]{width: 300px; height:40px;border-radius: 50px;border: none; padding: 0px 22px; outline: none;}
+.subcribe form input[type="submit"]{background: #AB3D41; padding: 7px 25px; color: #fff; border: none; border-radius: 50px; margin-top:10px ;margin-right: auto;}
+
+.contact-icons-cont{ position:fixed; background-color: #AB3D41; top:70px; z-index: 999; right: 10px; width: 50px; height: auto; display: flex; flex-direction: column;}
+.contact-icons-cont .contact-icons{height: 50px; width: 50px; background: #ffffff; }
+.contact-icons-cont .contact-icons a{font-size: 20px; padding: 5px; color:#AB3D41}
+.contact-icons-cont .contact-icons a img{width: 50px; height: 50px; margin:0px 0px 0px -16px;}
+
+/* ***************** subcribe end *********************** */
+/* ***************** Index end************* */
+
+/* **************** Accolades start ************************************************************ */
+.Accolades .row img{max-height: 100px; object-fit: contain;}
+/* **************** Accolades end ************************************************************ */
+/* *****************  Review start****************************************** */
+.review-container ul{display: flex; flex-wrap: wrap;  justify-content: space-between;margin:0px 0px 0px 0px; padding: 0px;}
+.review-container ul li{list-style: none;display: flex; flex-direction: row; justify-content: space-around;}
+.container .review-client{display: inline-block; background: #fff; width: 630px; height:200px;margin: 20px 0px;border-radius: 20px;}
+.container .review-client .img-client{display: inline-block;width: 180px; height: 100%; }
+.container .review-client .img-client img{ border-radius: 20px 0px 0px 20px; float: left; height: 100%; width: 100%;}
+.container .review-client .client-details{display:inline-block; width:400px; margin: 0px 15px;position: relative;top:-20px ; padding: 10px 0px;}
+.container .review-client .client-details .rateing{ display:block; background: #AB3D41; color: #fff; padding: 2px 6px; border-radius: 20px; width: 90px;  position: absolute; top:5px ;right: 10px; font-style: 12px;}
+.container .review-client .client-details h5{margin-top: 5px;}
+.container .review-client .client-details a{position: absolute; left: -30px; top:10px; color:#fff; background: #00a0dc;padding: 1px 5px; border-radius: 50%; border: 2px solid #fff;}
+.container .review-client .client-details p{display: inline-block;font-size: 12px; margin-bottom: 0px; font-weight: 400;}
+.container .review-client .client-details .there-details{ font-weight: 600; font-size: 12px;}
+.container .review-client .client-details .there-details span{ display: inline-block; width: 80px; font-weight: 600; font-size: 12px;color: #AB3D41;}
+.container .review-client .client-details .there-details img{height: 15px; float: right;}
+/* *****************  Review end****************************************** */
+/* ***************** mobile  Review start****************************************** */
+.mobile-review-container ul{display: flex; flex-wrap: wrap;  justify-content: space-between;margin:0px 0px 0px 0px; padding: 0px;}
+.mobile-review-container ul li{list-style: none;display: flex; flex-direction: row; justify-content: space-around;}
+.container .mobile-review-client{display: inline-block; background: #fff; width: 300px; height:320px;margin: 20px 0px;border-radius: 7px;}
+.container .mobile-review-client .mobile-img-client{display: flex; padding: 16px 12px;}
+.container .mobile-review-client .mobile-img-client img{height: 50px; width:50px;  border-radius: 50%;}
+.container .mobile-review-client .mobile-img-client .client-info{ padding: 0px 10px;}
+.container .mobile-review-client .mobile-img-client .client-info h5{margin-bottom: 1px;}
+.container .mobile-review-client .mobile-img-client .client-info p{ margin-bottom: 1px; font-size: 12px; font-weight: 600;}
+
+.container .mobile-review-client .mobile-client-details{position: relative; height: 100%;}
+.container .mobile-review-client .mobile-client-details .rateing{ display:block; background: #AB3D41; color: #fff; padding: 2px 6px; border-radius: 20px; width: 90px;  position: absolute; bottom:95px ;right: 15px; font-style: 12px;}
+
+.container .mobile-review-client .mobile-client-details p{padding: 5px 15px; font-size: 12px; margin-bottom: 0px;}
+.container .mobile-review-client .mobile-client-details .there-details{font-weight: 600; font-size: 12px; padding: 5px 15px; display: flex; flex-direction: row; align-items: center;}
+.container .mobile-review-client .mobile-client-details .there-details span{ display: inline-block; width: 80px; font-weight: 600; font-size: 12px;color: #AB3D41;}
+.container .mobile-review-client .mobile-client-details .there-details P{width: 190px; margin: 0px; }
+/* ***************** mobile  Review end****************************************** */
+/******************* Contact us start*******************************/
+
+.contactus .contact form{background: #fff; padding: 50px; box-shadow: 1px 2px 3px 4px  rgb(227 231 240);margin: 20px 0px;}
+.contactus .contact form input{background: #fff; border: 1px solid black; padding: 10px;margin: 5px;outline: none; border: 1px solid rgb(184, 184, 184); text-align: center;}
+.contactus .contact form button{padding: 10px 20px; background: #AB3D41; color: #fff; border-radius:50px;}
+/******************* Contact us end*******************************/
+/* ***************** footer section start************************* */
+footer {background:#1E1E1E; padding: 30px 0;  color:#fff;}
+.foot-col h5 {font-size: 1.3rem; color:rgb(174, 174, 174);}
+.foot-col ul {padding-left: 12px;}
+.foot-col ul li {margin-bottom: 5px;list-style: none;}
+.foot-col ul li a{ color:#fff;text-decoration: none;}
+.foot-col address {line-height: 22px;}
+.foot-col-follow img{width: 160px;}
+.foot-col-follow ul{list-style: none;}
+.foot-col-follow a{margin-right: 5px; font-size: 20px; color:#fff; display: inline-block; width: 29px; height: 3px; border-radius:100%;margin:5px auto; padding: 3px 8px;}
+.separator {background-color: #03080b; height: 1px; margin: 15px 0; padding: 0; position: relative; width: 100%;}
+.separator_line {background-color: var(--red-color); height: 3px; left: 0%; position: absolute; top: -1px; width: 30px;}
+/* *****************  Media start****************************************** */
+
+@media only screen and (max-width:460px){
+    .Post-Graduate-Programs .course{background: #fff; width: 320px; height: 350px; color: #010101; border-radius: 10px; position: relative; box-shadow:1px 2px 10px 2px  rgb(227 231 240);margin:auto;} 
+    .certification #carouselExampleSlidesOnly .carousel-item .carousal-card{height:140px; background: rgb(255, 255, 255); width: 300px; margin:15px; box-shadow: 1px 2px 3px 4px rgb(227 231 240); padding: 10px; position: relative;}
+}
+
+
+
+
+/* *****************  Media  end ****************************************** */
+/* ****************  Full stack developer start   **************************** */
+.course-container ul{display: flex; flex-direction: row; flex-wrap: wrap; justify-content:left;margin: 0px; padding-left: 0px;}
+.course-container ul li{list-style: none;}
+/* ****************  Full stack developer end   **************************** */
+/* ****************  Data science start ************** */
+.all-program-banner img{margin-top:65px;}
+.Data-Science-plan{background: #fff; padding: 50px 10px; border-radius: 20px; position: absolute; top:-82px; width: 100%; display:flex; flex-direction: row; flex-wrap: wrap;}
+.Data-Science-plan .Program-Duration{border-right: 1px solid rgb(165, 165, 165); border-left: 1px solid rgb(165, 165, 165);}
+.programs-highlight{margin-top:150px;}
+.programs-highlight h3{font-weight: 600; font-size: 40px; margin-bottom: 20px;}
+.programs-highlight .program-highligt-details{background: #fff; border-radius: 20px;}
+.programs-highlight .program-highligt-details{padding: 10px;}
+.programs-highlight .program-highligt-details li{color:#AB3D41; font-size: 20px;}
+.programs-highlight .program-highligt-details li p{color:#686868; font-size: 16px;}
+.programs-highlight .pgp-data-science p{color:#686868; font-size: 14px;}
+.placement-container .col-12{padding: 10px; margin: 10px; display: flex; flex-wrap: wrap; flex-direction: row;justify-content:space-between;}
+.placement-container h1{font-weight: 600; margin-top: 20px;}
+ .placement{padding: 20px; background: #fff; margin: 10px; display: flex; flex-direction:column; align-items: center; width: 200px; border-radius: 10px;}
+.placement img{height: 100px; width:auto; object-fit: cover;}
+.placement h5{font-weight: 600; margin:20px 0px 0px 0px ;}
+.placement p{font-size: 12px;}
+
+/* ****************  Data science end ************** */
+/* ***************   Eligibility-Criteria-container start**************** */
+.Eligibility-Criteria-container h1{margin: 10px; font-weight: bold;}
+.Eligibility-Criteria-details{padding: 12px; margin: 20px 0px; font-weight: 400;}
+
+/* ***************   Eligibility-Criteria-container end**************** */
+/* ****************     placement-internship start*************** */
+.placement-internship p{font-size: 15px; font-weight: 600; margin-top: 50px;}
+/* ****************     placement-internship end*************** */
+/* ****************   Our Course Curriculum start ************************ */
+.Course-Curriculum .over-curriculum-img img{max-height: 150px; width:100%; padding: 20px; object-fit: contain;}
+/* ****************   Our Course Curriculum end ************************ */
+
+@media only screen and (max-width:560px){
+    .Data-Science-plan{background: #fff; padding: 50px 10px; border-radius: 20px; position: absolute; top:-82px; width: 100%; display:flex; flex-direction: row; flex-wrap: wrap;}
+.Data-Science-plan .Program-Duration{border-right: 1px solid rgb(165, 165, 165); border-left: 1px solid rgb(165, 165, 165);}}
+/* *************  data-sci-contact start*************************** */
+.data-sci-contact{margin: 20px 0px;}
+.data-sci-contact form{background: #FFF; padding: 25px; width: 100%; display: flex; flex-direction: column; border-radius: 10px;}
+.data-sci-contact form input{padding: 15px; margin: 10px; border-radius: 5px; border:1px solid #AB3D41; outline: none;}
+.data-sci-contact form input[type="submit"]{ background: #AB3D41; color:#fff; border-radius: 10px;}
+/* *************  data-sci-contact end *************************** */
+
+
+
+
+
+
+
+
+@media only screen and (max-width:766px){
+    .banner .banner-details h1{margin:10px 10px 50px 10px; font-size: 50px;}
+    .banner .banner-details a{color:#fff; background: #AB3D41; text-decoration: none; padding:10px 20px;font-size: 20px; border-radius: 10px; margin-left: 10px;}
+    .banner .banner-details .trust-by ul{ margin:20px 10px 0px 10px;}
+    .banner .banner-details .trust-by ul li{list-style: none; display:inline-block; margin-left: -20px;}
+    .banner .banner-details .trust-by ul img{ height: 90px; width: 90px; border-radius: 50%; border: 5px solid #fff;}
+    .banner .banner-details .trust-by h3{margin:30px 0px 0px 10px; }
+
+
+
+
+
+    .banner-img .main-con .pyton-div{position: absolute; height:100px; width:100px; }
+    .banner-img .main-con .pyton-div .python-holder{position: relative; width: 100%; height: 100%;}
+    .banner-img .main-con .pyton-div .python-holder img:first-child{position: absolute;top:0%; left:0%;height: 100px; width: 100px;}
+    .banner-img .main-con .pyton-div .python-holder img:last-child{position: absolute; top:25%; left: 29%;height: 50px; width: 50px;}
+
+    .banner-img .main-con .linux-div{position: absolute; height:150px; width:150px; top:58%; left:5%; }
+    .banner-img .main-con .linux-div .linux-holder{position: relative; width: 100%; height: 100%;}
+    .banner-img .main-con .linux-div .linux-holder img:first-child{position: absolute;top:0%; left:0%;height: 100px; width: 100px;}
+    .banner-img .main-con .linux-div .linux-holder img:last-child{position: absolute; top:16%; left: 20%; height: 50px; width: 50px;}
+
+    .banner-img .main-con .hadoop-div{position: absolute; height:150px; width:150px;}
+    .banner-img .main-con .hadoop-div .hadoop-holder{position: relative; width: 100%; height: 100%;}
+    .banner-img .main-con .hadoop-div .hadoop-holder img:first-child{position: absolute;top:0%; left:0%;height: 100px; width: 100px;}
+    .banner-img .main-con .hadoop-div .hadoop-holder img:last-child{position: absolute; top:16%; left: 16%; height: 50px; width: 50px;}
+
+    .banner-img .main-con .tablesu-div{position: absolute; height:150px; width:150px; }
+    .banner-img .main-con .tablesu-div .tablesu-holder{position: relative; width: 100%; height: 100%;}
+    .banner-img .main-con .tablesu-div .tablesu-holder img:first-child{position: absolute;top:0%; left:0%; height: 100px; width: 100px;}
+    .banner-img .main-con .tablesu-div .tablesu-holder img:last-child{position: absolute; top:17%; left: 18%; height: 50px; width: 50px;}
+
+
+    .banner-img .main-con .AI{text-decoration: none; padding: 3px 7px;  border-radius: 3px; position: absolute; top: 11%;left:59%;color:#4D9A00;background-color: #BFFF8D ;}
+.banner-img .main-con .Data-Science{text-decoration: none; padding: 3px 7px; font-size: 10px; border-radius: 3px; position: absolute;  top: 39%;left:19%;color: #9A0000;background-color: #FF8D8D ;}
+.banner-img .main-con .Cyber-Security{text-decoration: none;padding: 3px 7px; font-size: 10px; border-radius: 3px; position: absolute;  top: 35%;left:65%;color: #84009A;background-color: #EDB8FF;}
+.banner-img .main-con .Business-Analytics{text-decoration: none;padding: 3px 7px; font-size: 10px; border-radius: 3px; position: absolute;  top: 67%; left: 30%;background-color:
+    #FFFA8D ;color: ; }
+    .Data-Science-plan{background: #fff; padding: 14px 10px; border-radius: 20px; position: absolute; top:8px; width: 100%; display:flex; flex-direction: row; flex-wrap: wrap;}
+    .Data-Science-plan .Program-Duration{border-right: 1px solid rgb(165, 165, 165); border-left: 1px solid rgb(165, 165, 165);}
+    .Data-Science-plan  h5{ margin: 0px;}
+    .Data-Science-plan .Program-Duration p{}
+    .programs-highlight h3{font-weight: 600; font-size: 40px; margin-bottom: 20px; margin-top: 243px;}
+}
+
+
+
+
+/* about page start */
+/* .about-aegis{padding: 0px; background-image: url("img/about-background.webp");background-repeat: no-repeat; width:100%; height:70vh; z-index: -99;} */
+.about-aegis{background: #1E1E1E;}
+.about-aegis .about-aegis-details h1,.about-aegis .about-aegis-details p{color:#fff; font-weight: 600;}
+.about-aegis .about-aegis-details,.about-aegis .about-aegis-img{margin-top: 100px; padding: 50px;}
+.aegis-about-dis p{padding: 10px; margin: 10px 0px; text-align: center; font-size: 20px; font-weight: 600;}
+
+.mild-stone .mild-stone-point>.mild-stone-dis{display: flex; justify-content: end; }
+.mild-stone .mild-stone-point>.mild-stone-dis p{width: 80%; width: 80%; font-weight: 600; font-size: 16px; }
+.mild-stone .mild-stone-point-left>.mild-stone-dis{display: flex; justify-content:start; }
+.mild-stone .mild-stone-point-left>.mild-stone-dis p{width: 80%; font-weight: 600; font-size: 16px;}
+.mild-stone .mild-stone-point-left .mild-stone-year{display: flex; justify-content: end; font-size: 70px; font-weight: bolder;  background: -webkit-linear-gradient(#f8dadb,  #AB3D41); -webkit-background-clip: text; -webkit-text-fill-color: transparent; z-index: -10;}
+.mild-stone .mild-stone-point{position: relative;}
+.mild-stone .mild-stone-point .mild-stone-year{ font-size: 70px; font-weight: bolder;  background: -webkit-linear-gradient(#f8dadb,  #AB3D41); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.mild-stone .line{width: 5px; height: 100%; background-color: #d3d3d3; display: block; margin: auto;}
+.mild-stone .mild-stone-point-left .mild-stone-dis{position: relative;}
+.mild-stone .mild-stone-point-left .mild-stone-dis p::before{content: ''; width: 25px; height: 25px; border-radius: 20px; background: #AB3D41; position: absolute; top:5px; left:-13.5%; border: 5px solid pink; visibility: visible;}
+ .mild-stone-point-left:first-child,
+ .mild-stone-point-left:nth-child(3),
+ .mild-stone-point-left:nth-child(5),
+ .mild-stone-point-left:nth-child(7),
+ .mild-stone-point-left:nth-child(9){visibility: hidden;} 
+
+ .mild-stone-point:nth-child(2),
+ .mild-stone-point:nth-child(4),
+ .mild-stone-point:nth-child(6),
+ .mild-stone-point:nth-child(8),
+ .mild-stone-point:last-child{visibility: hidden;}
+ .program-offered-deyails{display: flex; flex-direction: column; justify-content: center; }
+ .program-offered ul{font-size: 20px; font-weight: 500;}
+/* about page end */
+
+
+
+/* ************ contact us start***************** */
+.main-contact{margin-top: 100px;}
+.main-contact form {background: #fff; padding: 20px; margin: 10px;}
+.main-contact form input{width: 100%; padding: 15px; margin: 5px; background-color: #F2F2F2; border: none; border-radius: 10px;}
+.main-contact form textarea{width: 100%; padding: 15px; margin: 10px; background-color: #F2F2F2; border: none; border-radius: 0px;}
+.main-contact form input[type="submit"]{ color: #fff; background: #AB3D41; border-radius: 10px;}
+.main-contact form input:focus{outline: #AB3D41; border: 2.5px solid #AB3D41;}
+.main-contact form textarea:focus{outline: #AB3D41; border: 2.5px solid #AB3D41;}
+.main-contact form p{color:rgb(116, 116, 116) ;}
+.main-contact form .city{background: #fef6f6; margin: 10px 7px; width:170px; height:60px; border-radius: 10px; display: flex; flex-direction: row; align-items: center;}
+.main-contact form .city img{width:40px; margin: 10px;}
+.main-contact form .city p{margin: 10px 0px; font-weight: 600; font-size: 15px;}
+/* ************ contact us end***************** */
+
+
+@media only screen and (min-width:1200px) and (max-width:1500px){
+    .banner .banner-details h1{margin:50px 10px 50px 50px; font-size: 62px;}
+    .banner .banner-details a{color:#fff; background: #AB3D41; text-decoration: none; padding:10px 20px;font-size: 20px; border-radius: 10px; margin-left: 50px;}
+    .banner .banner-details .trust-by ul{ margin:20px 10px 0px 50px;}
+    .banner .banner-details .trust-by ul li{list-style: none; display:inline-block; margin-left: -20px;}
+    .banner .banner-details .trust-by ul img{ height: 60px; width: 60px; border-radius: 50%; border: 5px solid #fff;}
+    .banner .banner-details .trust-by h3{margin:30px 0px 0px 50px; }
+    .banner-img .main-con{padding: 20px;}
+    .banner-img .main-con .pyton-div{position: absolute; height: 120px; width: 120px; top:6%;left:19%;}
+    .banner-img .main-con .pyton-div .python-holder{position: relative; width: 100%; height: 100%;}
+    .banner-img .main-con .pyton-div .python-holder img:first-child{position: absolute;top:0%; left:0%;height: 100px; width: 100px;}
+    .banner-img .main-con .pyton-div .python-holder img:last-child{position: absolute; top:23%; left: 22%;height: 50px; width: 50px;}
+
+    .banner-img .main-con .linux-div{position: absolute; height: 120px; width: 120px;  top:48%;left:3%;}
+    .banner-img .main-con .linux-div .linux-holder{position: relative; width: 100%; height: 100%;}
+    .banner-img .main-con .linux-div .linux-holder img:first-child{position: absolute;top:0%; left:0%;height: 100px; width: 100px;}
+    .banner-img .main-con .linux-div .linux-holder img:last-child{position: absolute; top:20%; left: 25%;height: 50px; width: 50px;}
+
+    .banner-img .main-con .hadoop-div{position: absolute; height: 120px; width: 120px;  bottom:-2%;left:49%;}
+    .banner-img .main-con .hadoop-div .hadoop-holder{position: relative; width: 100%; height: 100%;}
+    .banner-img .main-con .hadoop-div .hadoop-holder img:first-child{position: absolute;top:0%; left:0%;height: 100px; width: 100px;}
+    .banner-img .main-con .hadoop-div .hadoop-holder img:last-child{position: absolute; top:18%; left: 22%;height: 50px; width: 50px;}
+
+    .banner-img .main-con .tablesu-div{position: absolute; height: 120px; width: 120px;  top:6%;left:70%;}
+    .banner-img .main-con .tablesu-div .tablesu-holder{position: relative; width: 100%; height: 100%;}
+    .banner-img .main-con .tablesu-div .tablesu-holder img:first-child{position: absolute;top:0%; left:0%; height: 100px; width: 100px;}
+    .banner-img .main-con .tablesu-div .tablesu-holder img:last-child{position: absolute; top:20%; left: 20%; height: 50px; width: 50px;}
+
+
+    .banner-img .main-con .AI{text-decoration: none; padding: 5px 8px; font-size: 13px; border-radius: 3px; position: absolute; top: 5%;left:59%;color:#4D9A00;background-color: #BFFF8D ;}
+.banner-img .main-con .Data-Science{text-decoration: none; padding: 5px 8px; font-size: 13px; border-radius: 3px; position: absolute;  top: 30%;left:25%;color: #9A0000;background-color: #FF8D8D ;}
+.banner-img .main-con .Cyber-Security{text-decoration: none;padding: 5px 8px; font-size: 13px; border-radius: 3px; position: absolute;  top: 35%;left:65%;color: #84009A;background-color: #EDB8FF;}
+.banner-img .main-con .Business-Analytics{text-decoration: none;padding: 5px 8px; font-size: 13px; border-radius: 3px; position: absolute;  top: 67%; left: 30%;background-color:
+    #FFFA8D ;}  
+}
+@media only screen and (max-width:992px){
+    .banner-img .main-con{overflow: hidden; margin-top: 0px;}
+    .mild-stone-point-left:first-child,
+    .mild-stone-point-left:nth-child(3),
+    .mild-stone-point-left:nth-child(5),
+    .mild-stone-point-left:nth-child(7),
+    .mild-stone-point-left:nth-child(9){visibility:visible;}    
+    .about-aegis .about-aegis-img{margin-top: 10px; padding: 10px;}
+    .about-aegis .about-aegis-details{ padding: 10px;}
+    .mild-stone .mild-stone-point-left .mild-stone-dis p::before{content: ''; width: 25px; height: 25px; border-radius: 20px; background: #AB3D41; position: absolute; top:5px; left:-13.5%; border: 5px solid pink; visibility: hidden;}
+}
+@media only screen and (max-width:560px){
+
+    .national-talent-hunt .scholarship { background: #494949; margin: 5px 0px 0px 11px; border-radius: 10px; padding: 10px; }
+    .national-talent-hunt p { color: #fff; margin: 5px 0px 0px 16px; font-size: 18px;}
+
+    .Post-Graduate-Programs .course{background: #fff; width: 320px; height: 400px; color: #010101; border-radius: 10px; position: relative;margin: 10px;}
+    .banner .banner-details h1{margin:30px 10px 50px 10px; font-size: 30px;}
+    .banner .banner-details a{color:#fff; background: #AB3D41; text-decoration: none; padding:10px 20px;font-size: 20px; border-radius: 10px; margin-left: 10px;}
+    .banner .banner-details .trust-by ul{ margin:20px 10px 0px 10px; padding-bottom:20px ;}
+    .banner .banner-details .trust-by ul li{list-style: none; display:inline-block; margin-left: -20px;}
+    .banner .banner-details .trust-by ul img{ height: 60px; width: 60px; border-radius: 50%; border: 5px solid #fff;}
+    .banner .banner-details .trust-by h3{margin:30px 0px 0px 10px; }
+
+    .banner-img .main-con .pyton-div{position: absolute; height: 70px; width: 70px; top:16%;left:22%;}
+    .banner-img .main-con .pyton-div .python-holder{position: relative; width: 100%; height: 100%;}
+    .banner-img .main-con .pyton-div .python-holder img:first-child{position: absolute;top:0%; left:0%;height: 60px; width: 60px;}
+    .banner-img .main-con .pyton-div .python-holder img:last-child{position: absolute; top:19%; left: 23%;height: 30px; width: 30px;}
+
+    .banner-img .main-con .linux-div{position: absolute; height: 70px; width: 70px; top:58%;left:6%;}
+    .banner-img .main-con .linux-div .linux-holder{position: relative; width: 100%; height: 100%;}
+    .banner-img .main-con .linux-div .linux-holder img:first-child{position: absolute;top:0%; left:0%;height: 60px; width: 60px;}
+    .banner-img .main-con .linux-div .linux-holder img:last-child{position: absolute; top:20%; left: 23%; height: 30px; width: 30px;}
+
+    .banner-img .main-con .hadoop-div{position: absolute; height: 70px; width: 70px; bottom:-6%;left:49%;}
+    .banner-img .main-con .hadoop-div .hadoop-holder{position: relative; width: 100%; height: 100%;}
+    .banner-img .main-con .hadoop-div .hadoop-holder img:first-child{position: absolute;top:0%; left:0%;height: 60px; width: 60px;}
+    .banner-img .main-con .hadoop-div .hadoop-holder img:last-child{position: absolute; top:18%; left: 23%; height: 30px; width: 30px;}
+    .banner-img .main-con .tablesu-div{position: absolute; height:150px; width:150px; top:11%;left:72%;}
+    .banner-img .main-con .tablesu-div .tablesu-holder{position: relative; width: 100%; height: 100%;}
+    .banner-img .main-con .tablesu-div .tablesu-holder img:first-child{position: absolute;top:0%; left:0%; height: 60px; width: 60px;}
+    .banner-img .main-con .tablesu-div .tablesu-holder img:last-child{position: absolute; top:11%; left: 9%; height: 30px; width: 30px;}
+
+
+    .banner-img .main-con .AI{text-decoration: none; padding: 3px 7px; font-size: 10px; border-radius: 3px; position: absolute; top: 15%;left:57%;color:#4D9A00;background-color: #BFFF8D ;}
+.banner-img .main-con .Data-Science{text-decoration: none; padding: 3px 7px; font-size: 10px; border-radius: 3px; position: absolute;  top: 39%;left:19%;color: #9A0000;background-color: #FF8D8D ;}
+.banner-img .main-con .Cyber-Security{text-decoration: none;padding: 3px 7px; font-size: 10px; border-radius: 3px; position: absolute;  top: 35%;left:65%;color: #84009A;background-color: #EDB8FF;}
+.banner-img .main-con .Business-Analytics{text-decoration: none;padding: 3px 7px; font-size: 10px; border-radius: 3px; position: absolute;  top: 78%; left: 24%;background-color:
+    #FFFA8D ;} 
+    .mild-stone .mild-stone-point-left>.mild-stone-dis p{width: 95%; font-weight: 600; font-size: 16px; text-align: center;}
+    .mild-stone .mild-stone-point-left .mild-stone-year{display: flex; justify-content:center; font-size: 70px; font-weight: bolder;  background: -webkit-linear-gradient(#f8dadb,  #AB3D41); -webkit-background-clip: text; -webkit-text-fill-color: transparent; z-index: -10;}
+    .main-contact form .city{background: #fef6f6; margin: 10px 7px; width:100%; height:60px; border-radius: 10px; display: flex; flex-direction: row; align-items: center;}
+    .main-contact{margin-top: 50px;}
+}
+@media screen  and (max-width:768px){
+    .Campus .india-map{position: relative;}
+.Campus .campus-name div{padding: 5px 10px; background: #fab8bb; display: inline-block; font-size: 13px; border-radius: 50px; font-weight: bold;}
+.Campus .campus-name .mumbai{position: absolute;bottom: 63%; left: 33%;}
+.Campus .campus-name .Bangalore{position: absolute;bottom: 28%;
+    left: 24%;}
+.Campus .campus-name .Pune{position: absolute; bottom: 45%; left: 16%;}
+.Campus .campus-name .mumbai-sub{position: absolute; bottom:63%;
+    left: 26.5%; padding: 5px; border: 5px solid #ffdbdb;}
+.Campus .campus-name .Bangalore-sub{position: absolute; bottom: 30%;
+    left: 48%;padding: 5px;border: 5px solid #ffdbdb;}
+.Campus .campus-name .Pune-sub{position: absolute;bottom: 46%;left: 29%; padding: 5px;border: 5px solid #ffdbdb;}
+.Campus .campus-cards .location-campous{background: #fff; padding: 20px; margin-bottom: 50px; border-radius: 10px; width: 200px; display: flex;flex-direction: row; align-items: center;}
+.Campus .campus-cards .campous-name{margin: 0px 10px; font-weight: 600;}
+
+.Campus .campus-cards .location-campous .campous-img img{width: 50px;}
+}
