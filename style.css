@@ -10,8 +10,11 @@
     --red-color:#AB3D41;
 }
 
+.error{color:#A73135; padding-left:10px;}
 /* ***************** Index start ************* */
 /* h1,h2,h3,h5,h4,h6{font-family:var(--primary-fonts); color: #AB3D41;font-family:'Poppins';} */
+h1{font-size: calc(25px + (40 - 25) * (100vw - 320px) / (1920 - 320));}
+p{font-size: calc(14px + (16 - 14) * (100vw - 320px) / (1920 - 320));}
 /* ********** navbar start************* */
 .navbar-expand-lg {position: fixed; z-index: 999; width: 100%; background: #fff;}
 .navbar-collapse .nav-item .nav-link{
@@ -25,7 +28,8 @@
 /* ********** navbar end************* */
 
 p{font-family:var();font-weight: 400;}
-body{background:#f3f3f3;   overflow-x: hidden; /* Hide horizontal scrollbar */}
+body{background:#f3f3f3;   overflow-x: hidden!important; /* Hide horizontal scrollbar */}
+.row{overflow-x: hidden !important;}
 nav .navbar-brand img{height:35px}
 h1 span{color:#AB3D41;font-family: 'Poppins'; font-weight: 600;}
 h3 span{color:#AB3D41;font-family: 'Poppins'; font-weight: 600;}
@@ -52,7 +56,6 @@ p span{color:#AB3D41;font-family: 'Poppins'; font-weight: 600; font-size: 20px; 
     .banner-img .main-con .pyton-div .python-holder img:first-child{position: absolute;top:0%; left:0%; transition: all 1s ease-in-out;animation-name: rotate; animation-duration: 15s; animation-iteration-count: infinite; animation-delay: 0s;}
 
     .banner-img .main-con .pyton-div .python-holder img:last-child{position: absolute; top:11%; left: 15%;}
-
     .banner-img .main-con .linux-div{position: absolute; height: 200px; width: 200px; top:58%;left:11%;}
     .banner-img .main-con .linux-div .linux-holder{position: relative; width: 100%; height: 100%;}
     .banner-img .main-con .linux-div .linux-holder img:first-child{position: absolute;top:0%; left:0%;transition: all 1s ease-in-out;animation-name: rotate; animation-duration: 15s; animation-iteration-count: infinite; animation-delay: 0s;}
@@ -82,6 +85,7 @@ p span{color:#AB3D41;font-family: 'Poppins'; font-weight: 600; font-size: 20px; 
 .login-form form{background:#fff; padding: 20px 0px;}
 .login-form form input{background:#F5F5F5; margin:5px 10px; height: 50px; border-radius: 10px; border:none;outline: #b33337;width: 90%;padding: 0px 22px;}
 .login-form form input[type="submit"]{ display:block;padding: 10px 40px;color:#fff; background: #AB3D41;width:90%; margin:10px auto;}
+.login-form form input:focus{outline: #AB3D41; border: 2.5px solid #AB3D41;}
 
 .owl-carousel .item{ height: 420px; display: flex; justify-content: center;} 
 /* ***************** post graduate start*********************** */
@@ -135,16 +139,16 @@ p span{color:#AB3D41;font-family: 'Poppins'; font-weight: 600; font-size: 20px; 
 /* **************** national-talent-hunt end *************************************** */
 /* **************** Campus start ************************************ */
 .Campus .india-map{position: relative;}
-.Campus .campus-name div{padding: 5px 10px; background: #fab8bb; display: inline-block; font-size: 13px; border-radius: 50px; font-weight: bold;}
+.Campus .campus-name div{padding: 5px 10px; background: #fab8bb; display: inline-block; font-size: 13px; border-radius: 50px; font-weight: bold;text-decoration: none;color: #fff;}
 .Campus .campus-name .mumbai{position: absolute;bottom: 35%; left: 22%;}
 .Campus .campus-name .Bangalore{position: absolute;bottom: 23%;
     left: 28%;}
 .Campus .campus-name .Pune{position: absolute; bottom: 30%; left: 12%;}
 .Campus .campus-name .mumbai-sub{position: absolute; bottom: 36%;
-    left: 19.5%; padding: 5px; border: 5px solid #ffdbdb;}
+    left: 19.5%; padding: 5px; border: 5px solid #ffdbdb; animation-name: blinking1; animation-duration:1s; animation-iteration-count: infinite;}
 .Campus .campus-name .Bangalore-sub{position: absolute; bottom: 20%;
-    left: 33%;padding: 5px;border: 5px solid #ffdbdb;}
-.Campus .campus-name .Pune-sub{position: absolute;bottom: 31%;left: 20%; padding: 5px;border: 5px solid #ffdbdb;}
+    left: 33%;padding: 5px;border: 5px solid #ffdbdb; animation-name: blinking1; animation-duration:1s; animation-iteration-count: infinite;}
+.Campus .campus-name .Pune-sub{position: absolute;bottom: 31%;left: 20%; padding: 5px;border: 5px solid #ffdbdb; animation-name: blinking1; animation-duration:1s; animation-iteration-count: infinite;}
 .Campus .campus-cards .location-campous{background: #fff; padding: 20px; margin-bottom: 50px; border-radius: 10px; width: 200px; display: flex;flex-direction: row; align-items: center;}
 .Campus .campus-cards .campous-name{margin: 0px 10px; font-weight: 600;}
 
@@ -153,13 +157,25 @@ p span{color:#AB3D41;font-family: 'Poppins'; font-weight: 600; font-size: 20px; 
 /* ***************** subcribe start*********************** */
 .subcribe .subcribe-img img{height: 250px;}
 .subcribe form input[type="email"]{width: 300px; height:40px;border-radius: 50px;border: none; padding: 0px 22px; outline: none;}
+.subcribe form input[type="email"]:focus{outline: #AB3D41;
+    border: 2.5px solid #AB3D41;}
 .subcribe form input[type="submit"]{background: #AB3D41; padding: 7px 25px; color: #fff; border: none; border-radius: 50px; margin-top:10px ;margin-right: auto;}
 
-.contact-icons-cont{ position:fixed; background-color: #AB3D41; top:70px; z-index: 999; right: 10px; width: 50px; height: auto; display: flex; flex-direction: column;}
-.contact-icons-cont .contact-icons{height: 50px; width: 50px; background: #ffffff; }
-.contact-icons-cont .contact-icons a{font-size: 20px; padding: 5px; color:#AB3D41}
-.contact-icons-cont .contact-icons a img{width: 50px; height: 50px; margin:0px 0px 0px -16px;}
-
+.contact-icons-cont{ position:fixed;  bottom:0px; z-index: 999; right: 10px; width: 50px; height: auto; display: flex; flex-direction: column; margin: 10px 0px;}
+.contact-icons-cont .row{border-radius: 10px;  background: #ffffff; }
+.contact-icons-cont .contact-icons{height: 50px; width: 50px; margin: 9px 0px;}
+.contact-icons-cont .contact-icons a{font-size: 20px; margin: 5px; color:#AB3D41;display: flex; justify-content: center; align-content: center;border-radius: 50%;  animation-name: blinking; animation-duration:1s; animation-iteration-count: infinite;}
+@keyframes blinking {
+    0%{
+        box-shadow: 0px 0px 0px 0px; 
+    }
+    100%{
+        box-shadow: 2px 3px 50px 9px #fff; 
+    }
+}
+.contact-icons-cont .contact-icons a i{background-color: #fff; padding: 5px;}
+.contact-icons-cont .contact-icons a img{width: 25px; height: 25px; margin:0px 0px 0px 0px; border-radius: 50%;}
+.contact-icons-cont .contact-icons .phone,.contact-icons-cont .contact-icons .mail{padding-top: 7px;}
 /* ***************** subcribe end *********************** */
 /* ***************** Index end************* */
 
@@ -190,7 +206,6 @@ p span{color:#AB3D41;font-family: 'Poppins'; font-weight: 600; font-size: 20px; 
 .container .mobile-review-client .mobile-img-client .client-info{ padding: 0px 10px;}
 .container .mobile-review-client .mobile-img-client .client-info h5{margin-bottom: 1px;}
 .container .mobile-review-client .mobile-img-client .client-info p{ margin-bottom: 1px; font-size: 12px; font-weight: 600;}
-
 .container .mobile-review-client .mobile-client-details{position: relative; height: 100%;}
 .container .mobile-review-client .mobile-client-details .rateing{ display:block; background: #AB3D41; color: #fff; padding: 2px 6px; border-radius: 20px; width: 90px;  position: absolute; bottom:95px ;right: 15px; font-style: 12px;}
 
@@ -202,11 +217,15 @@ p span{color:#AB3D41;font-family: 'Poppins'; font-weight: 600; font-size: 20px; 
 /******************* Contact us start*******************************/
 
 .contactus .contact form{background: #fff; padding: 50px; box-shadow: 1px 2px 3px 4px  rgb(227 231 240);margin: 20px 0px;}
-.contactus .contact form input{background: #fff; border: 1px solid black; padding: 10px;margin: 5px;outline: none; border: 1px solid rgb(184, 184, 184); text-align: center;}
+.contactus .contact form input{background: #fff;  padding: 10px;margin: 5px 0px;outline: none; border: 1px solid rgb(184, 184, 184); text-align: center;}
 .contactus .contact form button{padding: 10px 20px; background: #AB3D41; color: #fff; border-radius:50px;}
 /******************* Contact us end*******************************/
-/* ***************** footer section start************************* */
+/* ***************** footer section s
+tart************************* */
+
+
 footer {background:#1E1E1E; padding: 30px 0;  color:#fff;}
+/* footer .row{overflow-y: hidden ;} */
 .foot-col h5 {font-size: 1.3rem; color:rgb(174, 174, 174);}
 .foot-col ul {padding-left: 12px;}
 .foot-col ul li {margin-bottom: 5px;list-style: none;}
@@ -225,7 +244,9 @@ footer {background:#1E1E1E; padding: 30px 0;  color:#fff;}
 }
 
 
-
+/* *************** Programs start************************* */
+.modal-content .main-contact{ margin-top: 0px;}
+/* *************** Programs ends************************* */
 
 /* *****************  Media  end ****************************************** */
 /* ****************  Full stack developer start   **************************** */
@@ -233,11 +254,21 @@ footer {background:#1E1E1E; padding: 30px 0;  color:#fff;}
 .course-container ul li{list-style: none;}
 /* ****************  Full stack developer end   **************************** */
 /* ****************  Data science start ************** */
-.all-program-banner img{margin-top:65px;}
+.all-program-banner{position: relative; width: 100vw;padding: 0px;background:#1E1E1E;}
+.all-program-banner img{margin-top:65px; width: 100vw; object-fit: contain;padding: 0px; background: #1E1E1E;}
+.all-program-banner .cyber-law img{margin-top:65px; width: 100vw; object-fit: contain;padding: 20px; background: #1E1E1E;}
+.all-program-banner .banner-content{position: relative; top:25%; left:10%; width:90%; overflow-x: hidden;}
+.all-program-banner .banner-content h1{font-size:calc(30px + (70 - 30) * (100vw - 320px) / (1920 - 320)); font-weight: 700; color:#A73135;}
+.all-program-banner .banner-content .cyber-security-title{font-size:(30px + (70 - 30) * (100vw - 320px) / (1920 - 320)) ; font-weight: 700; color:    
+#3F2DA1;}
+    .all-program-banner .banner-content a{background:#A73135; width:172px; height:50px; border-radius: 10px; color:#fff;padding-top: 10px;}   
+    .all-program-banner .banner-content .cyber-security-btn{background:#3F2DA1; width:172px; height:50px; border-radius: 10px; color:#fff;padding-top: 10px;}   
+.all-program-banner .banner-content p:first-child{color:#fff;font-family: 'Poppins'; font-weight: 400;font-size:calc(20px + (40 - 20) * (100vw - 350px) / (1920 - 320)); }
+.all-program-banner .banner-content p:nth-child(3){color:#fff;font-family: 'Poppins'; font-weight: 400;font-size:calc(15px + (25 - 15) * (100vw - 350px) / (1920 - 320)); ; }
 .Data-Science-plan{background: #fff; padding: 50px 10px; border-radius: 20px; position: absolute; top:-82px; width: 100%; display:flex; flex-direction: row; flex-wrap: wrap;}
 .Data-Science-plan .Program-Duration{border-right: 1px solid rgb(165, 165, 165); border-left: 1px solid rgb(165, 165, 165);}
 .programs-highlight{margin-top:150px;}
-.programs-highlight h3{font-weight: 600; font-size: 40px; margin-bottom: 20px;}
+.programs-highlight h3{font-weight: 600;  font-size: calc(25px + (40 - 25) * (100vw - 320px) / (1920 - 320)); margin-bottom: 20px;}
 .programs-highlight .program-highligt-details{background: #fff; border-radius: 20px;}
 .programs-highlight .program-highligt-details{padding: 10px;}
 .programs-highlight .program-highligt-details li{color:#AB3D41; font-size: 20px;}
@@ -245,10 +276,10 @@ footer {background:#1E1E1E; padding: 30px 0;  color:#fff;}
 .programs-highlight .pgp-data-science p{color:#686868; font-size: 14px;}
 .placement-container .col-12{padding: 10px; margin: 10px; display: flex; flex-wrap: wrap; flex-direction: row;justify-content:space-between;}
 .placement-container h1{font-weight: 600; margin-top: 20px;}
- .placement{padding: 20px; background: #fff; margin: 10px; display: flex; flex-direction:column; align-items: center; width: 200px; border-radius: 10px;}
-.placement img{height: 100px; width:auto; object-fit: cover;}
-.placement h5{font-weight: 600; margin:20px 0px 0px 0px ;}
-.placement p{font-size: 12px;}
+ .placement{padding: 20px; background: #fff; margin: 10px; display: flex; flex-direction:column; align-items: center; width:calc(130px + (200 - 130) * (100vw - 320px) / (1920 - 320)); border-radius: 10px;}
+.placement img{height: 80px; width:auto; object-fit: cover;}
+.placement h5{display: block; font-weight: 600; margin:20px auto 5px; font-size:calc(15px + (27 - 15) * (100vw - 320px) / (1920 - 320));}
+.placement p{font-size:calc(12px + (17 - 12) * (100vw - 320px) / (1920 - 320));}
 
 /* ****************  Data science end ************** */
 /* ***************   Eligibility-Criteria-container start**************** */
@@ -257,7 +288,9 @@ footer {background:#1E1E1E; padding: 30px 0;  color:#fff;}
 
 /* ***************   Eligibility-Criteria-container end**************** */
 /* ****************     placement-internship start*************** */
-.placement-internship p{font-size: 15px; font-weight: 600; margin-top: 50px;}
+.placement-internship p{font-size: 15px; font-weight: 600; margin-top: calc(10px + (50 - 10) * (100vw - 320px) / (1920 - 320));}
+.placement-icons .col-4{padding: 0px;}
+.placement-icons img{width: 100%; height: 100%; object-fit: contain;}
 /* ****************     placement-internship end*************** */
 /* ****************   Our Course Curriculum start ************************ */
 .Course-Curriculum .over-curriculum-img img{max-height: 150px; width:100%; padding: 20px; object-fit: contain;}
@@ -273,13 +306,6 @@ footer {background:#1E1E1E; padding: 30px 0;  color:#fff;}
 .data-sci-contact form input[type="submit"]{ background: #AB3D41; color:#fff; border-radius: 10px;}
 /* *************  data-sci-contact end *************************** */
 
-
-
-
-
-
-
-
 @media only screen and (max-width:766px){
     .banner .banner-details h1{margin:10px 10px 50px 10px; font-size: 50px;}
     .banner .banner-details a{color:#fff; background: #AB3D41; text-decoration: none; padding:10px 20px;font-size: 20px; border-radius: 10px; margin-left: 10px;}
@@ -287,10 +313,6 @@ footer {background:#1E1E1E; padding: 30px 0;  color:#fff;}
     .banner .banner-details .trust-by ul li{list-style: none; display:inline-block; margin-left: -20px;}
     .banner .banner-details .trust-by ul img{ height: 90px; width: 90px; border-radius: 50%; border: 5px solid #fff;}
     .banner .banner-details .trust-by h3{margin:30px 0px 0px 10px; }
-
-
-
-
 
     .banner-img .main-con .pyton-div{position: absolute; height:100px; width:100px; }
     .banner-img .main-con .pyton-div .python-holder{position: relative; width: 100%; height: 100%;}
@@ -321,8 +343,7 @@ footer {background:#1E1E1E; padding: 30px 0;  color:#fff;}
     .Data-Science-plan{background: #fff; padding: 14px 10px; border-radius: 20px; position: absolute; top:8px; width: 100%; display:flex; flex-direction: row; flex-wrap: wrap;}
     .Data-Science-plan .Program-Duration{border-right: 1px solid rgb(165, 165, 165); border-left: 1px solid rgb(165, 165, 165);}
     .Data-Science-plan  h5{ margin: 0px;}
-    .Data-Science-plan .Program-Duration p{}
-    .programs-highlight h3{font-weight: 600; font-size: 40px; margin-bottom: 20px; margin-top: 243px;}
+    .programs-highlight h3{ margin-top: 243px;}
 }
 
 
@@ -364,14 +385,14 @@ footer {background:#1E1E1E; padding: 30px 0;  color:#fff;}
 
 /* ************ contact us start***************** */
 .main-contact{margin-top: 100px;}
-.main-contact form {background: #fff; padding: 20px; margin: 10px;}
-.main-contact form input{width: 100%; padding: 15px; margin: 5px; background-color: #F2F2F2; border: none; border-radius: 10px;}
-.main-contact form textarea{width: 100%; padding: 15px; margin: 10px; background-color: #F2F2F2; border: none; border-radius: 0px;}
+.main-contact form {background: #fff; padding: 20px;}
+.main-contact form input{width: 100%; padding: 15px; margin: 5px 0px; background-color: #F2F2F2; border: none; border-radius: 10px;}
+.main-contact form textarea{width: 100%; padding: 15px; margin: 10px 0px; background-color: #F2F2F2; border: none; border-radius: 10px;}
 .main-contact form input[type="submit"]{ color: #fff; background: #AB3D41; border-radius: 10px;}
 .main-contact form input:focus{outline: #AB3D41; border: 2.5px solid #AB3D41;}
 .main-contact form textarea:focus{outline: #AB3D41; border: 2.5px solid #AB3D41;}
 .main-contact form p{color:rgb(116, 116, 116) ;}
-.main-contact form .city{background: #fef6f6; margin: 10px 7px; width:170px; height:60px; border-radius: 10px; display: flex; flex-direction: row; align-items: center;}
+.main-contact form .city{background: #fef6f6; margin: 25px 7px 10px 7px; width:170px; height:60px; border-radius: 10px; display: flex; flex-direction: row; align-items: center;}
 .main-contact form .city img{width:40px; margin: 10px;}
 .main-contact form .city p{margin: 10px 0px; font-weight: 600; font-size: 15px;}
 /* ************ contact us end***************** */
@@ -422,8 +443,45 @@ footer {background:#1E1E1E; padding: 30px 0;  color:#fff;}
     .about-aegis .about-aegis-img{margin-top: 10px; padding: 10px;}
     .about-aegis .about-aegis-details{ padding: 10px;}
     .mild-stone .mild-stone-point-left .mild-stone-dis p::before{content: ''; width: 25px; height: 25px; border-radius: 20px; background: #AB3D41; position: absolute; top:5px; left:-13.5%; border: 5px solid pink; visibility: hidden;}
+
+  /* banner of courses  starte*/
+
+  .all-program-banner .banner-content{position: relative; top:28%; left:10%; width:90%;}
+      .all-program-banner .banner-content a{background:#A73135;width:120px; height:30px; border-radius: 5px; color:#fff;padding-top: 0px; font-size: 10px;padding-top: 5px;}   
+      .all-program-banner .banner-content .cyber-security-btn{background:#3F2DA1;width:120px; height:30px; border-radius: 5px; color:#fff;padding-top: 0px; font-size: 10px;padding-top: 5px;}   
+  /* banner of courses end */
+
 }
-@media only screen and (max-width:560px){
+@media screen  and (max-width:768px){
+    /* banner of courses  starte*/
+
+    .all-program-banner .banner-content a{background:#A73135;width:120px; height:30px; border-radius: 5px; color:#fff;padding-top: 0px; font-size: 10px;padding-top: 5px;}   
+    .all-program-banner .banner-content .cyber-security-btn{background:#3F2DA1;width:120px; height:30px; border-radius: 5px; color:#fff;padding-top: 0px; font-size: 10px;padding-top: 5px;}   
+/* banner of courses end */
+    .Campus .india-map{position: relative;}
+.Campus .campus-name div{padding: 5px 10px; background: #fab8bb; display: inline-block; font-size: 13px; border-radius: 50px; font-weight: bold;}
+.Campus .campus-name .mumbai{position: absolute;bottom: 63%; left: 33%;}
+.Campus .campus-name .Bangalore{position: absolute;bottom: 28%;
+    left: 24%; text-decoration: none; color: ;}
+.Campus .campus-name .Pune{position: absolute; bottom: 45%; left: 16%;}
+.Campus .campus-name .mumbai-sub{position: absolute; bottom:63%;
+    left: 26.5%; padding: 5px; border: 5px solid #ffdbdb;animation-name: blinking1; animation-duration:1s; animation-iteration-count: infinite;}
+.Campus .campus-name .Bangalore-sub{position: absolute; bottom: 30%;
+    left: 48%;padding: 5px;border: 5px solid #ffdbdb; animation-name: blinking1; animation-duration:1s; animation-iteration-count: infinite;}
+.Campus .campus-name .Pune-sub{position: absolute;bottom: 46%;left: 29%; padding: 5px;border: 5px solid #ffdbdb;animation-name: blinking1; animation-duration:1s; animation-iteration-count: infinite;}
+.Campus .campus-cards .location-campous{background: #fff; padding: 20px; margin-bottom: 50px; border-radius: 10px; width: 200px; display: flex;flex-direction: row; align-items: center;}
+.Campus .campus-cards .campous-name{margin: 0px 10px; font-weight: 600;}
+.Campus .campus-cards .location-campous .campous-img img{width: 50px;}
+
+}
+@keyframes blinking1 {
+    0%{
+        box-shadow: 0px 0px 0px 0px; 
+    }
+    100%{
+        box-shadow: 2px 3px 30px 9px #eeaaad; 
+    }
+}@media only screen and (max-width:560px){
 
     .national-talent-hunt .scholarship { background: #494949; margin: 5px 0px 0px 11px; border-radius: 10px; padding: 10px; }
     .national-talent-hunt p { color: #fff; margin: 5px 0px 0px 16px; font-size: 18px;}
@@ -448,8 +506,8 @@ footer {background:#1E1E1E; padding: 30px 0;  color:#fff;}
 
     .banner-img .main-con .hadoop-div{position: absolute; height: 70px; width: 70px; bottom:-6%;left:49%;}
     .banner-img .main-con .hadoop-div .hadoop-holder{position: relative; width: 100%; height: 100%;}
-    .banner-img .main-con .hadoop-div .hadoop-holder img:first-child{position: absolute;top:0%; left:0%;height: 60px; width: 60px;}
-    .banner-img .main-con .hadoop-div .hadoop-holder img:last-child{position: absolute; top:18%; left: 23%; height: 30px; width: 30px;}
+    .banner-img .main-con .hadoop-div .hadoop-holder img:first-child{position: absolute;top:-14%; left:27%;height: 60px; width: 60px;}
+    .banner-img .main-con .hadoop-div .hadoop-holder img:last-child{position: absolute; top:-5%; left: 46%; height: 30px; width: 30px; z-index: 99;}
     .banner-img .main-con .tablesu-div{position: absolute; height:150px; width:150px; top:11%;left:72%;}
     .banner-img .main-con .tablesu-div .tablesu-holder{position: relative; width: 100%; height: 100%;}
     .banner-img .main-con .tablesu-div .tablesu-holder img:first-child{position: absolute;top:0%; left:0%; height: 60px; width: 60px;}
@@ -465,21 +523,25 @@ footer {background:#1E1E1E; padding: 30px 0;  color:#fff;}
     .mild-stone .mild-stone-point-left .mild-stone-year{display: flex; justify-content:center; font-size: 70px; font-weight: bolder;  background: -webkit-linear-gradient(#f8dadb,  #AB3D41); -webkit-background-clip: text; -webkit-text-fill-color: transparent; z-index: -10;}
     .main-contact form .city{background: #fef6f6; margin: 10px 7px; width:100%; height:60px; border-radius: 10px; display: flex; flex-direction: row; align-items: center;}
     .main-contact{margin-top: 50px;}
-}
-@media screen  and (max-width:768px){
-    .Campus .india-map{position: relative;}
-.Campus .campus-name div{padding: 5px 10px; background: #fab8bb; display: inline-block; font-size: 13px; border-radius: 50px; font-weight: bold;}
-.Campus .campus-name .mumbai{position: absolute;bottom: 63%; left: 33%;}
-.Campus .campus-name .Bangalore{position: absolute;bottom: 28%;
-    left: 24%;}
-.Campus .campus-name .Pune{position: absolute; bottom: 45%; left: 16%;}
-.Campus .campus-name .mumbai-sub{position: absolute; bottom:63%;
-    left: 26.5%; padding: 5px; border: 5px solid #ffdbdb;}
-.Campus .campus-name .Bangalore-sub{position: absolute; bottom: 30%;
-    left: 48%;padding: 5px;border: 5px solid #ffdbdb;}
-.Campus .campus-name .Pune-sub{position: absolute;bottom: 46%;left: 29%; padding: 5px;border: 5px solid #ffdbdb;}
-.Campus .campus-cards .location-campous{background: #fff; padding: 20px; margin-bottom: 50px; border-radius: 10px; width: 200px; display: flex;flex-direction: row; align-items: center;}
-.Campus .campus-cards .campous-name{margin: 0px 10px; font-weight: 600;}
 
-.Campus .campus-cards .location-campous .campous-img img{width: 50px;}
+
+
+/* banner of courses  starte*/
+.Campus .campus-name .mumbai,.Campus .campus-name .Bangalore,.Campus .campus-name .Pune{text-decoration: none; color: #fff;}
+    .all-program-banner .banner-content a{background:#A73135;width:120px; height:30px; border-radius: 5px; color:#fff;padding-top: 0px; font-size: 10px;padding-top: 5px;}   
+    .all-program-banner .banner-content .cyber-security-btn{background:#3F2DA1;width:120px; height:30px; border-radius: 5px; color:#fff;padding-top: 0px; font-size: 10px;padding-top: 5px;}   
+/* banner of courses end */
+.all-program-banner .banner-content{position: relative; top:30%; left:10%; width:90%;}
 }
+.Campus .campus-name .mumbai a,.Campus .campus-name .Bangalore a,.Campus .campus-name .Pune a{text-decoration: none; color:black}
+/* ******** color start********************** */
+.data-sci-big-data{background: #1E1E1E; color: #A73135;}
+.machin-color{color: #a747ff !important;}
+.machin-bg{background: #a747ff !important;}
+.technical-law-color{color: #006b73 !important;}
+.technical-law-bg{background: #006B73 !important;}
+.telecom-color{color: 
+    #BA68C8;}
+
+
+/* ******** color end********************** */

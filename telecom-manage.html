@@ -31,7 +31,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light navbar-fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#"><img src="img\Aegis.png" alt="" srcset=""></a>
+            <a class="navbar-brand" href="index.html"><img src="img\Aegis.png" alt="" srcset=""></a>/
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -60,8 +60,18 @@
         </div>
     </nav>
     <div class="container-fluid">
-        <div class="all-program-banner">
-            <img src="img\banner1.jpg" class="img-fluid" alt="" srcset="">
+        <div class="all-program-banner row">
+            <div class="col-lg-6">
+                <div class="banner-content">
+                    <p>Post Graduate Program in </p>
+                    <h1 class="machin-color">Telecommunication Management</h1>
+                    <p>Telecommunication Management in the US, and is designed to develop cross-functional skills crucial for a telecom leader who understand IT and telecommunication operations from management, finance, legal and regulatory perspectives, crucial for leadership roles</p>
+                    <a href="#Programs_HighLights"  class="btn machin-bg">Learn More</a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+             <img src="img-comp\Ai.png" class="img-fluid" alt="" srcset="">
+            </div>
         </div>
         <div class="container position-relative">
             <div class="row Data-Science-plan">
@@ -80,7 +90,7 @@
             </div>
         </div>
     </div>
-    <div class="container programs-highlight">
+    <div class="container programs-highlight" id="Programs_HighLights">
         <h3 >Programs HighLights</h3>
         <div class="row">
             <div class="col-lg-6 px-3">
@@ -196,8 +206,19 @@
         <div class="row">
             <h1 class="my-3">Placements</h1>
             <div class="col-md-6">
-                <img src="img\main icons\top-company.png" class="img-fluid" alt="" srcset="">
-            </div>
+                <div class="row placement-icons">
+                 <div class="col-4"><img src="img\accenture.png" alt="" srcset=""></div>
+                 <div class="col-4"><img src="img\ford.png" alt="" srcset=""></div>
+                 <div class="col-4"><img src="img\infrasofttect.png" alt="" srcset=""></div>
+                 <div class="col-4"><img src="img\kaara.jpg" alt="" srcset=""></div>
+                 <div class="col-4"><img src="img\ibm.png" alt="" srcset=""></div>
+                 <div class="col-4"><img src="img\lognnext.jpg" alt="" srcset=""></div>
+                 <div class="col-4"><img src="img\pwc.png" alt="" srcset=""></div>
+                 <div class="col-4"><img src="img\spocto.jpg" alt="" srcset=""></div>
+                 <div class="col-4"><img src="img\deloitte.png" alt="" srcset=""></div>
+                 
+                </div>
+              </div>
             <div class="col-md-6">
                 <h1><span>CMC, INTERNSHIP & PLACEMENT</span></h1>
                 <div class="placement-internship">
@@ -256,18 +277,18 @@
     <div class="row justify-content-between">
         <div class="col-lg-4">
             <div class="data-sci-contact">
-                <form>
+                <form id="myform" method="post" action="index.html">
                     <h3>Contact</h3>
-                    <input type="text" name="" id="" required placeholder="Name">
-                    <input type="email" name="" id="" required placeholder="email">
-                    <input type="text" name="" id="" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required placeholder="Phone number">
-                    <input type="text" name="" id="" required placeholder="City">
+                    <input type="text" name="u_name" id=""  placeholder="Name">
+                    <input type="email" name="u_email" id=""  placeholder="email">
+                    <input type="text" name="u_phone" id=""  placeholder="Phone number">
+                    <input type="text" name="u_city" id=""  placeholder="City">
                     <input type="submit" value="Submit">
                 </form>
             </div>
 
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-7">
             <h1>Faculty</h1>
             <div class="owl-carousel owl-centered faculty-carousel">
                 <div class="item"> 
@@ -380,6 +401,26 @@
         </div>
     </div>
 </div>
+<div class="container contact-icons-cont">
+    <div class="row">
+        <div class="col-12 contact-icons">
+            <div class="phone">
+               
+                <a href="tel:+917777803030"><i class="fas fa-phone"></i></a>
+            </div>
+        </div>
+        <div class="col-12 contact-icons">
+            <div class="mail">
+                <a href="#"><i class="far fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="col-12 contact-icons">
+            <div class="whatapp">
+                <a href="https://web.whatsapp.com/" target="_blank"><img src="img\whatapp1.png" alt="" srcset=""></a>
+            </div>
+        </div>
+    </div>
+    </div>
     <footer>
         <div class="footer">
             <div class="container">
@@ -478,15 +519,12 @@
     <script src="fontawesome-free-5.15.4-web\js\all.min.js"></script>
     <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/vendors/jquery.min.js"></script>
     <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="validating-form\dist\jquery.validate.min.js"></script>
+    <script src="validating-form\dist\additional-methods.min.js"></script>
+
     <script src="script.js"></script>
 
 
